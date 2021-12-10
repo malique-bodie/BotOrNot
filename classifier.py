@@ -104,14 +104,14 @@ class FeedForward():
             100 * correct / total))
 
 def main():
-    # X_train, y_train, X_test, y_test = get_user_data()
-    # model = FeedForward()
-    # model.train(X_train, y_train)
-    # model.test(X_test, y_test)
+    X_train, y_train, X_test, y_test = get_user_data()
+    model = FeedForward()
+    model.train(X_train, y_train)
+    model.test(X_test, y_test)
 
-    # model = RandomForest()
-    # model.train(X_train, y_train)
-    # model.test(X_test, y_test)
+    model = RandomForest()
+    model.train(X_train, y_train)
+    model.test(X_test, y_test)
 
     X_train, y_train, X_test, y_test, embed = get_tweet_data()
 
